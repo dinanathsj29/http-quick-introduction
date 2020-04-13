@@ -25,7 +25,26 @@ Topics (separate with spaces)
 
 Add topics to categorize your repository and make it more discoverable:
 
-- ?
+- http
+- hypertext-transfer-protocol
+- web-server
+- webserver
+- client
+- client-server
+- http2
+- http-methods
+- get-post-put-delete-methods
+- http-vs-https
+- https
+- protocols
+- request-response
+- ip-tcp
+- http-responce-code
+- 200-400-500
+- stateless
+- http-communication-request-response
+- protocols-ip-tcpip-smtc-http-ftp
+- http-architecture-mechanism
 
 Welcome
 ---------------------
