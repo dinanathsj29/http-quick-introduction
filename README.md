@@ -99,6 +99,7 @@ Topics included/covered
     - 1.1. [What is HTTP](#11-what-is-http)
     - 1.2. [Protocol](#12-protocol)
     - 1.3. [HTTP communication](#13-http-communication)
+    - 1.4. [HTTP communication - Request](#14-http-communication-request)
  
 
 1 Introduction to HTTP
@@ -106,6 +107,14 @@ Topics included/covered
 
 1.1. What is HTTP
 ---------------------
+
+```
+
+> As soon as User opens `Web Browser and enter URL`, the user is indirectly making use of HTTP. 
+
+HTTP mechanism sends/transfer/transit `REQUEST` to the webserver and fetches the `RESPONSE`/data from the webserver
+
+```
 
 <p>
  <figure>
@@ -121,9 +130,11 @@ Topics included/covered
 - HyperText Transfer Protocol (Internet Communication/Data Transfer on the web). A set of rules (and a format) for data being transferred on the web in the form of HTML, image, audio, video, zip, etc.
 - HTTP foundation of data communication for the World Wide Web/internet since 1990. HTTP is a generic and stateless protocol that can be used for other purposes as well as using extensions of its request methods, error codes, and headers
 
-> As soon as User opens `Web Browser and enter URL`, the user is indirectly making use of HTTP. HTTP mechanism sends/transfer/transit `REQUEST` to the webserver and fetches the `RESPONSE`/data from the webserver
+``` 
 
-> Every time we open a browser - visit and load pages, Submit Form, Button click for Ajax calls
+> Every time we open a browser - visit and load pages, Submit Form, Button click for Ajax calls, ultimately HTTP REQUEST & RESPONSE mechanism used
+
+```
 
 - **Hyper Text**
   - Looks like a normal text but have some special effects/formattings
@@ -136,7 +147,7 @@ Topics included/covered
 ---------------------
 
 - `A set of rules/standards, two sides (client and server) agree on to use when communicating`
-- Both the client and server are programmed to understand and use that particular set of rules (Its similar to two people from different countries agreeing on the same language to speak in)
+- Both, the Client and Server are programmed to understand and use that particular set of rules (Its similar to two people from different countries agreeing on the same language to speak in)
 
 | Protocol              | Description / Details       |
 | --------------------- | --------------------------- |
@@ -172,3 +183,29 @@ Servers are most often computers in the cloud <br/>
     <figcaption>&nbsp;&nbsp;&nbsp; Image 1.3 - HTTP Client Server Architecture </figcaption>
   </figure>
 </p>
+
+1.4. HTTP communication-Request
+---------------------
+
+**Request Message (sent from client to server) usually consists/contains the following things:**
+1. URL
+2. Request headers
+3. HTTP request method
+4. Content/data
+
+- **URL**
+  - Contains domain/path to page
+  - Query string/parameters to page URL (`domain-path/page=loging or so...`)
+- **Request headers**
+  - Contains Browser information (current Browswer, OS, Date & Time)
+  - Cookies if available (User Details)
+  - Authentication information (User ID, Password)
+  - Other request information
+- **HTTP request method**
+  - **GET** (Request/Retrieve/Get Data)
+  - **POST** (Send Data)
+  - PUT
+  - DELETE
+- **Content/data**
+  - Sent during POST/PUT Request body
+  
