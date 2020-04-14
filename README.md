@@ -100,8 +100,13 @@ Topics included/covered
     - 1.2. [Protocol](#12-protocol)
     - 1.3. [HTTP communication](#13-http-communication)
     - 1.4. [HTTP communication - Request](#14-http-communication-request)
+    - 1.5. [HTTP communication - Response](#15-http-communication-response)
+    - 1.6. [HTTP Methods](#16-http-methods)
+    - 1.7. [HTTP vs HTTPS](#17-http-vs-https)
+    - 1.8. [HTTP Status Codes](#18-http-status-codes)
+    - 1.9. [HTTP/2](#19-http2)
+2. [HTTP Resources](#2-http-resources)
  
-
 1 Introduction to HTTP
 =====================
 
@@ -209,3 +214,100 @@ Servers are most often computers in the cloud <br/>
 - **Content/data**
   - Sent during POST/PUT Request body
   
+1.5. HTTP communication-Response
+---------------------
+
+**Response Message (sent from server to client) usually consists/contains the following things:**
+- Response headers
+- Content/data <br/><br/>
+- **Response headers**
+  - Contains HTTP response code (200, 400, 404 and so on)
+  - Cookies if available (User Details)
+  - Content-type, size (file type - HTML, image, zip with file size in the form of bytes sent from server to client)
+- **Content/data**
+  - The result from the server (HTML) as a Response body
+
+```
+
+> Open any web page 
+  -> Inspect Element (Developer Tool) 
+    -> Network Tab 
+      -> check **Headers**, **Preview** and **Response** Tab information / details
+
+```
+
+1.6. HTTP Methods
+---------------------
+
+**Here the main or widely used HTTP methods:**
+
+- GET 
+- POST
+- PUT
+- DELETE <br/><br/>
+- **GET (Retrieve)**
+  - Retrieves data from the server
+- **POST (Create)**
+  - Submit data to the server
+- **PUT (Update)**
+  - Update/Modify data already on the server
+- **DELETE (Delete)**
+  - Delete data from the server
+
+1.7. HTTP vs HTTPS
+---------------------
+
+**HTTPS:**
+- `HyperText Transfer Protocol Secure`
+- Data sent is encrypted
+- HTTPS (HTTP over SSL or HTTP Secure) is the use of Secure Sockets Layer (SSL) or Transport Layer Security (TLS) as a sublayer under regular HTTP application layering
+- HTTPS encrypts and decrypts user HTTP page requests as well as the pages that are returned by the Web server. The use of HTTPS protects against `eavesdropping and Man-in-the-Middle (MitM)` attacks 
+- HTTPS was developed by `Netscape`.
+
+1.8. HTTP Status Codes
+---------------------
+
+In response to HTTP requests, servers often issue response codes, indicating the request is being processed, that there was an error in the request or that the request is being redirected. They are between the range of 100 to 500.
+
+| Status Code Range     | Description / Details       |
+| --------------------- | --------------------------- |
+| `1xx`                 | **`Informational`**  <br/> Request received / processing |
+| `2xx`                 | **`Success`**  <br/> Successfully Received, understood and accepted |
+| `3xx`                 | **`Redirect`**  <br/> Further action must be taken / redirect |
+| `4xx`                 | **`Client Error`**  <br/> Request does not have what it needs (something is missing in the request, wrong data passed ) |
+| `5xx`                 | **`Server Error`**  <br/> Server failed to fulfil an apparent valid request |
+| | |
+
+**Common response codes include:**
+
+| Status Code           | Description / Details       |
+| --------------------- | --------------------------- |
+| `200`                 |  **`OK`**  <br/> The request such as GET or POST, worked and is being acted upon |
+| `201`                 |  **`OK Created`** |
+| `300`                 |  **`Moved Permanently`**  <br/> This response code means that the URI of the requested resource has been changed permanently |
+| `301`                 |  **`Moved to the new URL`** |
+| `304`                 |  **`Not modified (cached version)`** |
+| `400`                 |  **`Bad request`** |
+| `401`                 |  **`Unauthorized`** <br/> The client ie. the user requesting the server has not been authenticated |
+| `403`                 |  **`Forbidden`** <br/> The client's identity is known but has not been given access authorization |
+| `404`                 |  **`Not Found`** <br/> This is the most frequent and most recognized error code. It means that the URL is nor recognized or the resource at the location does not exist |
+| `500`                 |  **`Internal Server Error`** <br/> The server has encountered a situation it doesn't know how to handle|
+| | | 
+
+1.9. HTTP2
+---------------------
+
+- Major revision of HTTP ver 1.0
+- Many improvements are done under the hood in HTTP ver 1.0
+- Responds with more data
+- Reduce latency by enabling full REQUEST and RESPONSE multiplexing (One-shot response for similar resources)
+- Fast, efficient, more reliable, Secure and Safe 
+
+2 HTTP Resources
+=====================
+
+> **Reference**: https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
+
+> **Reference**: https://www.tutorialspoint.com/http/http_overview.htm
+
+> **Reference**: https://www.w3schools.com/whatis/whatis_http.asp
