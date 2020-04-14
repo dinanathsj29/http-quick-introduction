@@ -18,7 +18,7 @@ Description
 
 Let us learn/understand the essentials and basic concepts of HTTP (HyperText Transfer Protocol)
 
-This tutorial, reference/learning material is for the beginners who do not have any understandings about HTTP. Here will cover fundamental concepts of HTTP.
+This tutorial, reference/learning material is for beginners who do not have any understandings about HTTP. Here will cover the fundamental concepts of HTTP.
 
 Topics (separate with spaces)
 ---------------------
@@ -98,6 +98,8 @@ Topics included/covered
 1. [Introduction to HTTP](#1-introduction-to-http)
     - 1.1. [What is HTTP](#11-what-is-http)
     - 1.2. [Protocol](#12-protocol)
+    - 1.3. [HTTP communication](#13-http-communication)
+ 
 
 1 Introduction to HTTP
 =====================
@@ -144,3 +146,29 @@ Topics included/covered
 | `FTP`                 | **`File Transfer Protocol`** (Files)    |
 | `SMTP`                | **`Simple Mail Transfer Protocol`** (Email)    |
 
+1.3. HTTP communication
+---------------------
+
+**HTTP Communication in brief:**
+
+**Client**<br/>
+Clients are often browsers (Chrome, Edge, Safari), but they can be any type of program or device
+
+- Sends request (Request message)
+- Waits for service to respond
+- Once receives the reply from the server, displays results at client location/device
+
+**Web Server**<br/>
+Servers are most often computers in the cloud <br/>
+`(Continuously listens for requests)`
+
+- Accepts request send by client and redirects to a specific web site or web app
+- Web site processes data
+- The web server receives a reply from a web site and forwards it to the client (Response message)
+
+<p>
+  <figure>
+    &nbsp;&nbsp;&nbsp; <img src="_images-http/client_server_request_response.png" alt="HTTP Client Server Architecture" title="HTTP Client Server Architecture" width="1200" border="2" />
+    <figcaption>&nbsp;&nbsp;&nbsp; Image 1.3 - HTTP Client Server Architecture </figcaption>
+  </figure>
+</p>
