@@ -97,6 +97,7 @@ Topics included/covered
 
 1. [Introduction to HTTP](#1-introduction-to-http)
     - 1.1. [What is HTTP](#11-what-is-http)
+    - 1.2. [Protocol](#12-protocol)
 
 1 Introduction to HTTP
 =====================
@@ -111,10 +112,10 @@ Topics included/covered
 </p>
 
 - HTTP stands for `HyperText Transfer Protocol`
-- HTTP is a set of rules and regulations ie. principles to accomplish Internet Communication/Data Transfer related tasks on the web (between Servers an Clients)
-- Responsible for communication between Clients and Web Servers
+- HTTP is a `set of rules and regulations ie. principles to accomplish Internet Communication/Data Transfer` related tasks on the web (between Servers an Clients)
+- Responsible for `communication between Clients and Web Servers`
 - HTTP is child protocol of TCP/IP
-- HTTP is stateless ie. every request is completely independent (each request is a single transaction, does not remember or dependent on past/before request)
+- HTTP is `stateless ie. every request is completely independent` (each request is a single transaction, does not remember or dependent on past/before request)
 - HyperText Transfer Protocol (Internet Communication/Data Transfer on the web). A set of rules (and a format) for data being transferred on the web in the form of HTML, image, audio, video, zip, etc.
 - HTTP foundation of data communication for the World Wide Web/internet since 1990. HTTP is a generic and stateless protocol that can be used for other purposes as well as using extensions of its request methods, error codes, and headers
 
@@ -128,4 +129,18 @@ Topics included/covered
   - Hypertext refers to how `Web pages (HTML documents) are linked together`. Thus, the link available on a webpage is called Hypertext
   - Structured Text with links to other parts of a text, usually a web page
   - Usually defined using an HTML - in combination with other web technologies like CSS, JavaScript, etc.
+
+1.2. Protocol
+---------------------
+
+- `A set of rules/standards, two sides (client and server) agree on to use when communicating`
+- Both the client and server are programmed to understand and use that particular set of rules (Its similar to two people from different countries agreeing on the same language to speak in)
+
+| Protocol              | Description / Details       |
+| --------------------- | --------------------------- |
+| `IP`                  | **`Internet Protocol`**     |
+| `TCP`                 | **`Transmission Control Protocol`**     |
+| `HTTP`                | **`Hyper Text Transfer Protocol`**  (Internet Communication/Data Transfer on the web)    |
+| `FTP`                 | **`File Transfer Protocol`** (Files)    |
+| `SMTP`                | **`Simple Mail Transfer Protocol`** (Email)    |
 
